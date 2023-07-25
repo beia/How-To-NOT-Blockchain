@@ -41,6 +41,7 @@ def main():
         # 8. Wait for receipt
         tx_receipt = web3.eth.wait_for_transaction_receipt(tx_hash)
         print(f'Tx successful with hash: {tx_receipt.transactionHash.hex()}')
+        print(f'Gas used: {tx_receipt.gasUsed}')
 
         # 9. Wait 10 seconds
         print('Now we wait 10 seconds...')
