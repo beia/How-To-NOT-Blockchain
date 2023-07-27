@@ -3,6 +3,8 @@ ACCOUNT_PRIVATE = '' # Wallet private key
 
 CONTRACT_ADDRESS = '' # Fill with the smart contract address once you deployed it (in step 3)
 
+CONTRACT_CREATION_BLOCK_NUMBER = 0 # Set this to the Block that includes the first change you are interested in.
+
 RPC_ENDPOINT = 'HTTP://127.0.0.1:7545' # The RPC endpoint of the network
 CONTRACT_NAME = 'IoTDevice'
 
