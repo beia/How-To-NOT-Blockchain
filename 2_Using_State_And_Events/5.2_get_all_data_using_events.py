@@ -13,6 +13,6 @@ print(f'Making a call to contract at address: { settings.CONTRACT_ADDRESS }')
 IoTDevice = web3.eth.contract(address=settings.CONTRACT_ADDRESS, abi=abi)
 
 # 5. Call Contract
-events = IoTDevice.events.NewDataPublished().get_logs(fromBlock=0, toBlock='latest')
+events = IoTDevice.events.NewDataPublished().get_logs(fromBlock=settings.CONTRACT_CREATION_BLOCK_NUMBER, toBlock='latest')
 data = [x['args']['data'] for x in events]
 print(f'The stored data is: \n { pprint.pformat(data) } ')
