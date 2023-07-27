@@ -32,6 +32,7 @@ def main():
 
     # 8. Print contract address
     print(f'Contract deployed at address: {tx_receipt.contractAddress}')
+    print(f'Block number is: {tx_receipt.blockNumber}')
     print('YOU MIGHT WANT TO WRITE THIS DOWN!')
 
 
